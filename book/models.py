@@ -5,6 +5,9 @@ from django.urls import reverse
 class Author(models.Model):
     name = models.CharField(max_length=255)
 
+    def get_absolute_url(self):
+        return reverse('book:author_detail', kwargs={'pk':self.pk})
+
     def __str__(self):
         return self.name
     

@@ -4,6 +4,6 @@
 
 {% block content %}
     <h3>Book store collections </h3>
-    <a href="{% url 'book:authors' %}" role="button" class="btn btn-primary w-100 mb-2">All Authors</a>
-    <a href="" role="button" class="btn btn-secondary w-100">Add an Author</a>
+    <a href="{% url 'book:list_authors' %}" role="button" class="btn btn-primary w-100 mb-2">All Authors</a>
+    <a href="{% url 'book:author_add' %}" role="button" class="btn btn-secondary w-100">Add an Author</a>
 {% endblock content %}
